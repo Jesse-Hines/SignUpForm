@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sign Up Form</title>
+	<style>
+		body {
+			background-color: #1A1A1A;
+			color: #FFFFFF;
+			font-family: Arial, sans-serif;
+			font-size: 16px;
+			line-height: 1.5;
+			margin: 0;
+			padding: 0;
+		}
+		
+		.container {
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			justify-content: space-between;
+			max-width: 960px;
+			margin: 0 auto;
+			padding: 50px;
+		}
+		
+		.image {
+			flex: 1;
+			margin-right: 50px;
+		}
+		
+		.form {
+			flex: 1;
+			max-width: 400px;
+		}
+		
+		h1 {
+			font-size: 32px;
+			margin-bottom: 20px;
+			text-align: center;
+			text-transform: uppercase;
+		}
+		
+		label {
+			display: block;
+			margin-bottom: 10px;
+		}
+		
+		input[type="text"], input[type="email"], input[type="tel"], input[type="password"] {
+			background-color: #333333;
+			border: none;
+			border-radius: 5px;
+			color: #FFFFFF;
+			font-size: 16px;
+			margin-bottom: 20px;
+			padding: 10px;
+			width: 100%;
+		}
+		
+		input[type="submit"], input[type="button"] {
+			background-color: #2ECC71;
+			border: none;
+			border-radius: 5px;
+			color: #FFFFFF;
+			cursor: pointer;
+			font-size: 16px;
+			margin-top: 20px;
+			padding: 10px;
+			width: 100%;
+		}
+		
+		input[type="submit"]:hover, input[type="button"]:hover {
+			background-color: #27AE60;
+		}
+		
+		.error {
+			color: #FF0000;
+			font-size: 14px;
+			margin-bottom: 10px;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="image">
+			<img src="photo-1668625598340-f07181c7a143.avif" alt="Image">
+		</div>
+		<div class="form">
+			<h1>This is not a real online service! Sign up now to get started.</h1>
+			<form action="#" method="post">
+				<label for="first-name">First Name</label>
+				<input type="text" id="first-name" name="first-name" required>
+				
+				<label for="last-name">Last Name</label>
+				<input type="text" id="last-name" name="last-name" required>
+				
+				<label for="email">Email</label>
+				<input type="email" id="email" name="email" required>
+				
+				<label for="phone">Phone Number</label>
+				<input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+				
+				<label for="password">Password</label>
+				<input type="password" id="password" name="password" required>
+				
+				<label for="confirm-password">Confirm Password</label>
+                <input type="password" id="confirm-password" name="confirm-password" required>
+                <input type="submit" value="Create Account">
+            </form>
+            
+            <div class="login">
+                <p>Already have an account? <a href="#">Log in</a></p>
+            </div>
+        </div>
+    </div>
+    
